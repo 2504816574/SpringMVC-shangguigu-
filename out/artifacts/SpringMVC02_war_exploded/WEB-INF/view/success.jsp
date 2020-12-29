@@ -12,5 +12,6 @@
     </head>
     <body>
         <h1>ok</h1>
+        ${username}
     </body>
 </html>
