@@ -22,19 +22,19 @@
 		<property name="maxUploadSize" value="88888888"/>
 	</bean>
 
-<!--	<mvc:interceptors>
-		&lt;!&ndash; 默认拦截所有请求 &ndash;&gt;
-		<bean class="com.atguigu.interceptor.FirstInterceptor"></bean>
-		<bean class="com.atguigu.interceptor.SecondInterceptor"></bean>
-		&lt;!&ndash; 此方式要求拦截器类上必须加注解@Component &ndash;&gt;
-		&lt;!&ndash; <ref bean="firstInterceptor"/> &ndash;&gt;
+	<mvc:interceptors>
+		<!-- 默认拦截所有请求 -->
+		<bean class="com.interceptor.FirstInterceptor"/>
+		<bean class="com.interceptor.SecondInterceptor"/>
+		<!-- 此方式要求拦截器类上必须加注解@Component -->
+		<!-- <ref bean="firstInterceptor"/> -->
 
-		&lt;!&ndash; 设置自定义拦截方式 &ndash;&gt;
-		&lt;!&ndash; <mvc:interceptor>
+		<!-- 设置自定义拦截方式 -->
+		<!-- <mvc:interceptor>
 			<bean></bean>
 			<mvc:mapping path=""/>
 			<mvc:exclude-mapping path=""/>
-		</mvc:interceptor> &ndash;&gt;
-	</mvc:interceptors>-->
+		</mvc:interceptor> -->
+	</mvc:interceptors>
 
 </beans>
